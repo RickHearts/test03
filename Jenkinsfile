@@ -28,7 +28,7 @@ pipeline {
     stage('Deploy') {
       steps {
         pwd(tmp: true)
-        git 'https://github.com/RickHearts/mvn1'
+        git(url: 'https://github.com/RickHearts/mvn1', branch: 'main')
       }
     }
 
